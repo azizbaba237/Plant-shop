@@ -1,0 +1,28 @@
+{
+  "plant": [
+    {
+      "id": 1,
+      "plantName": "json-server",
+      "price": "typicode",
+      "category": "typicode",
+      "desctription": "typicode",
+      "avatar": "typicode"
+    },
+    {
+      "id": 2,
+      "plantName": "json-server",
+      "price": "typicode",
+      "category": "typicode",
+      "desctription": "typicode",
+      "avatar": "typicode"
+    },
+    {
+      "id": 3,
+      "plantName": "json-server",
+      "price": "typicode",
+      "category": "typicode",
+      "desctription": "typicode",
+      "avatar": "typicode"
+    }
+  ]
+}
