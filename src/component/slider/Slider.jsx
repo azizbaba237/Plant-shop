@@ -8,14 +8,16 @@ import {
 // import useSelector and useDispatch
 import { useSelector, useDispatch } from "react-redux";
 // import de data
-import { plantList } from "../../data/plantList";
+import { plantList } from "../../data/plantLists";
 
 const Slider = () => {
+  // slide index
   const slideIndex = useSelector((state) => state.slider.value);
   console.log("slideIndex", slideIndex);
   const dispatch = useDispatch();
+
   return (
-    <div className="text-white relative pb-4">
+    <div className=" text-white relative pb-4">
       <div>
         {plantList.map((item) => {
           return (
@@ -37,7 +39,7 @@ const Slider = () => {
                 )}
               </div>
               <div className="absolute top-44 mx-auto inset-x-1/4">
-                <p className="text-black text-4xl font-inter font-bold">
+                <p className="md:text-7xl sm:text-6xl text-4xl font-bold md:py-6 text-[#00df9a] ">
                   {parseInt(item.id) === slideIndex && item.text}
                 </p>
               </div>

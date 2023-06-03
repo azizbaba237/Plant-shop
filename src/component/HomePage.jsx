@@ -1,19 +1,13 @@
-import React from 'react'
-// import Hero from './Hero'0
-// import Analytics from './Analytics'
-// import NewsLetter from './NewsLetter'
-// import Cart from './Cart'
-import Slider  from './slider/Slider'
+import React from "react";
+import Slider from "./slider/Slider";
+import NavigateButton from "./navigateButtons/Navigatebuttons";
 
 export const HomePage = () => {
   return (
     <div>
-      <Slider/>
-      {/* <Hero />
-      <Analytics />
-      <NewsLetter />
-      <Cart /> */}
+      <Slider />
+      <NavigateButton />
     </div>
-  )
-}
-export default HomePage
+  );
+};
+export default HomePage;

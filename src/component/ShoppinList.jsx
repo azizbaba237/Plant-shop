@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { plantList } from "../data/plantList";
+import { plantList } from "../data/plantLists";
 import PlantItem from "./PlantItem";
 import Categories from "./Categories";
 
