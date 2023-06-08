@@ -37,7 +37,7 @@ const NavigateButton = () => {
           );
         })}
       </div>
-      <div className="bg-[#00df9a] p-2 w-[55%] mx-auto rounded-md ">
+      <div className="bg-[#00df9a] p-2 w-[55%] mx-auto rounded-md my-12">
         <h3 className="text-orange-900 text-center text-3xl font-inter font-bold tracking-normal leading-none">
           Latest Products
         </h3>

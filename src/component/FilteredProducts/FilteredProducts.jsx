@@ -12,7 +12,7 @@ const FilteredProducts = () => {
   console.log("params", type);
   return (
     <div className="text-white">
-      <div className="pt-16">
+      <div className="pt-16 my-16">
         <div className="pl-14">
           <h1
             className="text-4xl font-inter text-white font-bold tracking-normal leading-none

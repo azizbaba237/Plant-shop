@@ -27,7 +27,6 @@ import selChamp from "../assets/selchamp.jpg";
 import engrais1 from "../assets/engrais1.webp";
 import semence from "../assets/semence.jpg";
 
-
 export const plantList = [
   {
     id: "0",
@@ -35,7 +34,7 @@ export const plantList = [
     price: 10,
     category: "classique",
     cover: tomate,
-    text: "Growe whit plant",
+    text: "WELCOME TO PLANT-SHOP",
   },
   {
     id: "1",
@@ -43,7 +42,7 @@ export const plantList = [
     price: 10,
     category: "classique",
     cover: lemon,
-    text: "Get your farm product here",
+    text: "GET YOUR FARM PRODUCT HERE",
   },
   {
     id: "2",
@@ -51,7 +50,7 @@ export const plantList = [
     price: 10,
     category: "classique",
     cover: fraise,
-    text: "Get your tchop here",
+    text: "GET YOUR FARM PRODUCT HERE",
   },
   {
     id: "3",
@@ -59,7 +58,7 @@ export const plantList = [
     price: 550,
     category: "classique",
     cover: carrote,
-    text: "Sale your experience here",
+    text: "SALE YOUR FARM EXPERIENCE HERE",
   },
 ];
 
