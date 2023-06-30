@@ -17,7 +17,7 @@ const Slider = () => {
   const dispatch = useDispatch();
 
   return (
-    <div className=" text-white relative pb-4">
+    <div className=" text-white relative pb-4 pt-32">
       <div>
         {plantList.map((item) => {
           return (
@@ -32,14 +32,14 @@ const Slider = () => {
               <div>
                 {parseInt(item.id) === slideIndex && (
                   <img
-                    className="h=[850%] w=full"
+                    className="lg:h=[850%] lg:w=full"
                     src={item.cover}
                     alt={item.name}
                   />
                 )}
               </div>
-              <div className="absolute top-44 mx-auto inset-x-1/4">
-                <p className="md:text-7xl sm:text-6xl text-4xl font-bold md:py-6 text-[#00df9a] ">
+              <div className="absolute top-16 md:top-52 lg:top-60 mx-auto md:inset-x-1/4 inset-x-1/3">
+                <p className="md:text-4xl lg:text-7xl sm:text-6xl font-bold md:py-6 lg:py-12 text-[#00df9a] ">
                   {parseInt(item.id) === slideIndex && item.text}
                 </p>
               </div>
@@ -47,7 +47,7 @@ const Slider = () => {
           );
         })}
       </div>
-      <div className="flex absolute bottom-12 left-[40%]">
+      <div className="flex absolute md:bottom-12 md:left-[35%] lg:left-[40%] bottom-2 left-[18%] ">
         {plantList.map((dot, index) => {
           return (
             <div className="m-4" key={dot.id}>
@@ -65,7 +65,7 @@ const Slider = () => {
       </div>
       <div>
         <button
-          className="absolute right-4 top-[50%] bg-black rounded-full p-2 hover:bg-[#00df9a]"
+          className="absolute right-4 top-[55%] md:top-[50%] bg-black rounded-full p-2 hover:bg-[#00df9a]"
           onClick={() => dispatch(nextSlide(slideIndex + 1))}
         >
           <svg
@@ -84,7 +84,7 @@ const Slider = () => {
           </svg>
         </button>
         <button
-          className="absolute left-4 top-[50%] bg-black rounded-full p-2 hover:bg-[#00df9a]"
+          className="absolute left-4 top-[55%] md:top-[50%] bg-black rounded-full p-2 hover:bg-[#00df9a]"
           onClick={() => dispatch(prevSlide(slideIndex - 1))}
         >
           <svg

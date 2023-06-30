@@ -8,6 +8,8 @@ import { useParams } from "react-router";
 import { addToCart } from "../../features/slices/cartSlices";
 // import useDispatch
 import { useDispatch } from "react-redux";
+// import footer
+import Footer from "../Footer/Footer";
 
 const SingleProduct = () => {
   const product = useSelector((state) => state.products.singleProduct);
@@ -19,39 +21,34 @@ const SingleProduct = () => {
         .filter((product) => product.id === id)
         .map((item, index) => {
           return (
-            <div key={index} className="flex justify-center items-center py-10">
-              <div className="pl-44 grow-[2]">
+            <div
+              key={index}
+              className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 justify-center items-center sm:gap-x-6 lg:gap-x-32 px-4 pt-40"
+            >
+              <div className=" grow-[2] mb-4">
                 <img
                   src={item.img}
                   alt={item.name}
-                  className="h-[850px] rounded-lg"
+                  className="sm:h-[600px] h-[400px] rounded-lg"
                 />
               </div>
-              <div className="grow-[3] pl-4">
-                <div className="max-w-lg">
-                  <h5 className="text-2xl font-inter font-bold tracking-normal leading-none pb-4">
-                    {item.name}
-                  </h5>
-                  <p className="text-orange-700 text-xl font-bold tracking-normal leading-none pb-4">
-                    15% OFF
-                  </p>
-                  <p className="text-white text-xl font-bold tracking-normal leading-none pb-4">
-                    {item.text}
-                  </p>
-                  <div className="pb-4">
-                    <div>
-                      <label
-                        for="countries"
-                        class="block mb-2 text-sm font-medium text-white dark:text-white"
-                      >
-                        Select an option
-                      </label>
-                      <select className="bg-gray-50 border border-gray-300 text-gray-300 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"></select>
-                    </div>
+              <div className="grow-[3]">
+                <div className="max-w-lg flex flex-col justify-center items-center">
+                  <div className=" flex flex-col justify-center items-center sm:justify-start sm:items-start">
+                    <h5 className="text-2xl font-inter font-bold tracking-normal leading-none pb-2">
+                      {item.name}
+                    </h5>
+                    <p className="text-orange-700 text-xl font-bold tracking-normal leading-none pb-2">
+                      15% OFF
+                    </p>
+                    <p className="text-white text-sm font-medium sm:font-bold sm:text-xl tracking-normal leading-none pb-4">
+                      {item.text}
+                    </p>
                   </div>
                   <Tooltip content="Add to cart" placement="bottom">
                     <Button
-                      color="gary"
+                      className="mb-8 w-full hover:bg-[#00df9a]"
+                      color="white"
                       size="lg"
                       variant="outlined"
                       ripple={true}
@@ -77,6 +74,9 @@ const SingleProduct = () => {
             </div>
           );
         })}
+      <div className="mt-6">
+        <Footer />
+      </div>
     </div>
   );
 };

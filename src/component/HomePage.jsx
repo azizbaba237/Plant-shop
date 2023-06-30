@@ -9,8 +9,8 @@ export const HomePage = () => {
     <div>
       <Slider />
       <NavigateButton />
-      <ProductSection/>
-      <Footer/>
+       <ProductSection/>
+      <Footer/> 
     </div>
   );
 };

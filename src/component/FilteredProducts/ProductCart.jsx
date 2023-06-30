@@ -21,8 +21,8 @@ const ProductCart = ({ id, name, img, text, price }) => {
 
   return (
     <Link to={`/filteredProducts/${type}/` + id}>
-      <Card className="w-96" onClick={() => dispatch(singleProduct(id))}>
-        <CardHeader shadow={false} floated={false} className="h-96">
+      <Card className="sm:full" onClick={() => dispatch(singleProduct(id))}>
+        <CardHeader shadow={false} floated={false} className="sm:h-64">
           <img src={img} alt="" className="w-full h-full object-cover" />
         </CardHeader>
         <CardBody>
@@ -37,7 +37,7 @@ const ProductCart = ({ id, name, img, text, price }) => {
           <Typography
             variant="small"
             color="gray"
-            className="font-normal opacity-75"
+            className="font-normal opacity-75 "
           >
             {text}
           </Typography>
@@ -46,7 +46,7 @@ const ProductCart = ({ id, name, img, text, price }) => {
           <Button
             ripple={false}
             fullWidth={true}
-            className="bg-blue-gray-900/10 text-blue-gray-900 shadow-none hover:shadow-none hover:scale-105 focus:shadow-none focus:scale-105 active:scale-100"
+            className="bg-blue-gray-900/10 text-balack shadow-none hover:shadow-none hover:scale-105 focus:shadow-none focus:scale-105 active:scale-100"
           >
             Add to Cart
           </Button>

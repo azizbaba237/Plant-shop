@@ -1,5 +1,5 @@
 // import create slice 
-import { createSlice, configureStore } from "@reduxjs/toolkit";
+import { createSlice } from "@reduxjs/toolkit";
 // import data 
 import { plantList } from "../../data/plantLists";
 
